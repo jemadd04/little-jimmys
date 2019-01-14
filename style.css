@@ -7,8 +7,7 @@ body {
 }
 
 .offset:before {
-  height: 7rem;
-  /* margin-top: 4rem; */
+  height: 5rem;
   content: "";
   display: block;
 }
@@ -19,7 +18,7 @@ body {
   font-weight: 700;
   font-size: .9rem;
   letter-spacing: .1rem;
-  background: rgba(0, 0, 0, .6)!important;
+  background: rgba(112, 128, 144, 0.6) !important;
 }
 
 .navbar-brand img {
@@ -46,7 +45,37 @@ body {
   height: 100vh;
 }
 
-/*============= COURSE SECTION =============*/
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+  text-shadow: .1rem .1rem .5rem black;
+}
+
+/*============= ABOUT SECTION =============*/
 
 .narrow {
   width: 75%;
@@ -61,6 +90,90 @@ body {
   margin: 1rem;
 }
 
+/*============= MENU SECTION =============*/
+.jumbotron {
+  border-radius: 0;
+  padding-top: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #021A12;
+  margin: 0 auto 2rem;
+}
+.menu img {
+  max-width: 100%;
+  transition: transform .5s ease;
+}
+.row.no-padding [class*=col-] {
+  padding: 0;
+}
+.menu img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.menu {
+  overflow: hidden;
+}
+
+/*============= CONTACT SECTION =============*/
+footer {
+  background-color: slategray;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+footer img {
+  height: 4rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #021A12;
+}
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+
+/*============= Media Queries =============*/
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
