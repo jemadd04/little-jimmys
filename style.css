@@ -6,6 +6,13 @@ body {
   color: #505962;
 }
 
+.offset:before {
+  height: 7rem;
+  /* margin-top: 4rem; */
+  content: "";
+  display: block;
+}
+
 /* Navbar */
 .navbar {
   text-transform: uppercase;
